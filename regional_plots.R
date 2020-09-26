@@ -105,7 +105,7 @@ p6 <- ggplot(data = rg_data, aes(x = region, y = theme_6, fill = value)) +
   ylim(0,1) +
   ggtitle('Mean / Median Healthcare Scores across U.S Regions')
 
-# arranging plots on one page
+#### arranging plots on one page
 ggarrange(p1,p2,p3,p4,p5,p6,p0, ncol = 2, nrow = 4)
 
 
