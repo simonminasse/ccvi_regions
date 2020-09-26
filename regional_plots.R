@@ -109,5 +109,5 @@ p6 <- ggplot(data = rg_data, aes(x = region, y = theme_6, fill = value)) +
 ggarrange(p1,p2,p3,p4,p5,p6,p0, ncol = 2, nrow = 4)
 
 
-save.image('/Users/simonminasse/GitAndR/ccvi_regions/regional_plots.RData')
+save.image('/Users/simonminasse/GitAndR/ccvi_regions/regional_plots.RData') 
 
