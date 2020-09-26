@@ -8,9 +8,9 @@ runtime: shiny
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+```
 
-setwd("/Users/simonminasse/GitAndR/ccvi_regions")
-
+```{r, include = FALSE}
 library(tidyverse)
 library(readxl)
 library(RColorBrewer)
