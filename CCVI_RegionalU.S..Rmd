@@ -1,7 +1,7 @@
 ---
 title: "CCVI across U.S. Regions"
 author: "Simon Minasse"
-date: "9/26/2020"
+date: "Published 9/28/2020"
 output: html_document
 runtime: shiny
 ---
@@ -208,17 +208,18 @@ p6 <- ggplot(data = rg_data, aes(x = region, y = theme_6, fill = value)) +
 ggarrange(p1,p2,p3,p4,p5,p6,p0, ncol = 2, nrow = 4)
 ```
 
+##### Introduction
 * Over the past few months I have come across a lot of interesting information and 
 resources relating to the current pandemic. One of the things I have noticed in particular is the amount
-of publicly accessible data relating to COVID-19. As a result, I felt it was a good idea to use at least 
-one of these datasets to present information in a useful way, and sharpen my data skills at the same time.
+of publicly accessible data relating to COVID-19.
 
-* The dataset I chose to work on was the [Surgo Foundation's COVID-19 Community Vulnerability Index (CCVI)][1]. The CCVI is a resource that helps to identify areas in the U.S. where support is most needed. As they put it, 
-  "The CCVI is not designed to predict which individuals will become infected with coronavirus – instead, it   tells us about the anticipated negative impact at the community level." 
-They have data at the state, and county levels, and I decided to summarize the state data at the regional level. I used the regions West, Southwest, Midwest, Southeast, and Northeast to group the states as defined by numerous sources includiong [National Geographic][2].
+* An interesting dataset I chose to work on was the [Surgo Foundation's COVID-19 Community Vulnerability Index (CCVI)][1]. The CCVI is a resource that helps to identify areas in the U.S. where support is most needed. As they put it, 
+  "The CCVI is not designed to predict which individuals will become infected with coronavirus – instead, it tells us about the anticipated negative impact at the community level." 
+  
+##### CCVI Data
+* The data is organized by state and county (as well as census tract data), and I decided to summarize the state data at the regional level. I used the regions West, Southwest, Midwest, Southeast, and Northeast to group the states as defined by numerous sources including [National Geographic][2].
 
-* The overall CCVI is a composite of six themes / vulnerability indicators. Below you can see an interactive plot that allows you to view the vulnerability scores for each indicator across U.S. regions. 
-* I chose to show both the mean and median scores for states in each region because the commonly-used mean may be skewed by outliers, and if such was the case, this visualization would help make it clear. 
+* The overall CCVI is a composite of six themes / vulnerability indicators. Below you can see an interactive plot that allows you to view the vulnerability scores for each indicator across U.S. regions, with a higher score meaning higher vulnerability in case there were states with parituclalry high or low vulnerability that may stand out from the region and influence the average. 
 
 
 ```{r eruptions, echo=FALSE}
@@ -251,13 +252,21 @@ renderPlot({
 })
 ```
 
-* The results show evidence that communities in the Southeast and Southwest have the highest overall vulnerability, and suggests that those are the regions where most support should be allocated. Based on the description given on the Surgo Foundation's [website][1], these regions were vulnerable due to factors such as lower income, higher unemployment, larger elderly population, being racially marginalized, and having other underlying health conditions. It is notable that the Northeast has the lowest score despite New York being called the [epicenter of the pandemic][3] at one point. This suggests that areas like New York are better able to respond to the pandemic compared to other areas in the country.
 
-* With regards to sharpening my skillset, this was a good exercise. Although I have not built an RShiny App up to this point, I do have a lot of experience working in R so the learning curve wasn't too bad. I'm sure being able to build this type of visualization will come in handy for future analyses. If you are curious about how I did this, feel free to check out the github repo associated with this project [here][4].
+##### Results
+* The results show evidence that communities in the Southeast and Southwest have the highest overall vulnerability, and suggests that those are the regions where more support / resources should be allocated. 
 
+##### Conclusion
+* Based on the indicator descriptions given on the Surgo Foundation's [website][1], and evaluating the different indicator scores, it appears these regions were vulnerable due to a variety of factors such as lower income, higher unemployment, larger elderly population, racial marginalization, and other underlying health conditions. It is also notable that the Northeast has the lowest overall score despite New York being called the [epicenter of the pandemic][3] at one point.
 
 [1]: https://precisionforcovid.org/ccvi "CCVI"
 [2]: https://www.nationalgeographic.org/maps/united-states-regions/#:~:text=A%20common%20way%20of%20referring,West%2C%20Southeast%2C%20and%20Midwest. "National Geographic"
 [3]: https://www.wbur.org/onpoint/2020/04/13/new-york-city-epicenter-pandemic "Epicenter"
 [4]: https://github.com/simonminasse/ccvi_regions "Github"
 
+##### Sources
+1. CCVI. https://precisionforcovid.org/ccvi
+2. National Geographic. https://www.nationalgeographic.org/maps/united-states-regions/#:~:text=A%20common%20way%20of%20referring,West%2C%20Southeast%2C%20and%20Midwest.
+3. NYC Epicenter. https://www.wbur.org/onpoint/2020/04/13/new-york-city-epicenter-pandemic 
+
+Feel free to check out the github repo associated with this project [here][4].
