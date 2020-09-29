@@ -265,8 +265,10 @@ renderPlot({
 [4]: https://github.com/simonminasse/ccvi_regions "Github"
 
 ##### Sources
-1. CCVI. https://precisionforcovid.org/ccvi
+1. CCVI. https://precisionforcovid.org/ccvi https://precisionforcovid.org/cases 
 2. National Geographic. https://www.nationalgeographic.org/maps/united-states-regions/#:~:text=A%20common%20way%20of%20referring,West%2C%20Southeast%2C%20and%20Midwest.
 3. NYC Epicenter. https://www.wbur.org/onpoint/2020/04/13/new-york-city-epicenter-pandemic 
+
+* Dataset - https://docs.google.com/spreadsheets/d/1bPdZz1YCYai1l35XL2CWdAS0gCjpss0FMiDGWERYPmA/edit#gid=978504636
 
 Feel free to check out the github repo associated with this project [here][4].
