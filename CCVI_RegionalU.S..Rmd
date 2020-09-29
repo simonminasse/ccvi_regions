@@ -219,7 +219,7 @@ of publicly accessible data relating to COVID-19.
 ##### CCVI Data
 * The data is organized by state and county (as well as census tract data), and I decided to summarize the state data at the regional level. I used the regions West, Southwest, Midwest, Southeast, and Northeast to group the states as defined by numerous sources including [National Geographic][2].
 
-* The overall CCVI is a composite of six themes / vulnerability indicators. Below you can see an interactive plot that allows you to view the vulnerability scores for each indicator across U.S. regions, with a higher score meaning higher vulnerability in case there were states with parituclalry high or low vulnerability that may stand out from the region and influence the average. 
+* The overall CCVI is a composite of six themes / vulnerability indicators. Below you can see an interactive plot that allows you to view the vulnerability scores for each indicator across U.S. regions, with a higher score meaning higher vulnerability. I used the both the mean and median as summary statistics in case there were states with parituclalry high or low vulnerability that may stand out from the region and influence the average. 
 
 
 ```{r eruptions, echo=FALSE}
