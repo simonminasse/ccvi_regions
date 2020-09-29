@@ -1,7 +1,7 @@
 ---
 title: "CCVI across U.S. Regions"
 author: "Simon Minasse"
-date: "Published 9/28/2020"
+date: "Updated on 9/29/2020"
 output: html_document
 runtime: shiny
 ---
